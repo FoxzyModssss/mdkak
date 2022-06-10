@@ -1,32 +1,32 @@
 exports.private = () =>{
-	return`*_Cuman Bisa Di Private Message Deck_*`
+	return`Fitur hanya bisa di gunakan di private chat`
 	}
 exports.wait = () => {
-    return `*_Bentar Deck_*`
+    return `⏳ Mohon tunggu sebentar~`
 }
 exports.ok = () => {
-    return `*_Nih Deck_*`
+    return `✅ Done. Ok desu~`
 }
 
 exports.err = () => {
-    return `*_Error_*`
+    return `⚠️ Fitur Sedang Error`
 }
 exports.erorLink = () => {
-    return `*_Link Error_*`
+    return `⚠️ Link nya error`
 }
 exports.media = () => {
-    return `*_Pilih Media Yang Lu Pen Download_*`
+    return `Silahkan pilih media yang ingin kamu download`
 }
 exports.replyImg = (prefix, command) => {
-    return `*_Kirim/Reply Foto Dengan Caption ${prefix + command}_*`
+    return `Kirim/Reply Foto Dengan Caption ${prefix + command}`
 }
 
 exports.wrongFormat = (prefix) => {
-    return `*_Cara Lu Gunainnya Salah Dek Cek Di_* *_${prefix}allmenu_* *_Sono_*`
+    return `Format salah ❎ Silakan cek cara penggunaan di *${prefix}allmenu*.`
 }
 
 exports.emptyMess = () => {
-    return `*_Masukin Pesan Yang Pen Lu Sampein_*`
+    return `❎ Harap masukkan pesan yang ingin disampaikan!`
 }
 
 exports.cmdNotFound = (cmd, prefix) => {
@@ -34,19 +34,19 @@ exports.cmdNotFound = (cmd, prefix) => {
 }
 
 exports.ownerOnly = () => {
-    return `*_Yang Bisa Cuman Owner, Lu Ngapain Coba? Owner Aja Bukan_*`
+    return `❎ Command ini khusus Owner`
 }
 
 exports.doneOwner = () => {
-    return `*_Nih Owner Koncol_*`
+    return `✅  ️Sudah selesai, Owner ~`
 }
 
 exports.groupOnly = () => {
-    return `*_Cuman Bisa Di Group Deck_*`
+    return `👥  Command ini hanya bisa digunakan di dalam grup!`
 }
 
 exports.adminOnly = () => {
-    return `*_Yang Bisa Cuman Admin Group, Lu Ngapain? Member Gausah Soker_*`
+    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
 }
 
 exports.nhFalse = () => {
@@ -60,15 +60,15 @@ Total diblokir: *${blockNumber.length}* user\n`
 }
 
 exports.notAdmin = () => {
-    return `*_Tuh Orang Ga Admin Dek_*`
+    return `❎ User bukan seorang admin! ❎`
 }
 
 exports.adminAlready = () => {
-    return `*_Lu Ngapain Promote Dia? Orang Dia Udah Admin_*`
+    return `❎ Tidak  dapat mem-promote user yang merupakan admin!`
 }
 
 exports.botNotAdmin = () => {
-    return `*_Mikir Lah Kont, Bot Ga Admin_*`
+    return `Jadikan bot sebagai admin terlebih dahulu! 🙏`
 }
 
 exports.received = (pushname) => {
@@ -85,12 +85,16 @@ exports.notNum = (q) => {
     return `"${q}", bukan angka!`
 }
 exports.menunya = (salam, pushname, botname) =>{
-	return`Hai ${pushname} Selamat ${salam} Welcome To Menu ${botname} Untuk Melihat Menu Yang Lain Silahkan Klik List Command Di Bawah Ini
+	return`Hai kak ${pushname} 👋 selamat ${salam} , 
+saya ${botname}, bot ini adalah Beta Multi-Device Whatsapp. 
+Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
+lapor owner agar segera di perbaiki 🙏      
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
-    return `*Nih List Menu Gwejh*
+    return `*Selamat ${salam} ${pushname}*
 *⌚Time Server : ${time}*
+*📚 List-Menu FoxzyBotz :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -775,6 +779,19 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}jiso 
 ├ ${prefix}lisa  
 ╰❒ ${prefix}rose
+
+╭─❒ 「 TqTo 」 
+├ My God
+├ My Parents
+├ Fatih A.
+├ Ferdi
+├ DikaArdnt
+├ Mhankbarbar
+├ Nurutomo
+├ Rashid
+├ ZeeoneOfc
+├ Penyedia Module
+╰❒ And All Support
     `
 }
 
@@ -782,78 +799,71 @@ exports.rules = (prefix) => {
     return `
 *── 「 RULES AND FAQ 」 ──*
 
-1. Jangan Spam Bot. 🙅
-Sanksi: *Block Permanent*
+1. Jangan spam bot. 🙅
+Sanksi: *❎ WARN/SOFT BLOCK*
 
-2. Jangan Menelpon Bot. ☎️
-Sanksi: *Block Permanent*
+2. Jangan telepon bot. ☎️
+Sanksi: *❎ SOFT BLOCK*
 
-3. Jangan Mengeksploitasi Bot.😖
-Sanksi: *Block Permanent*
+3. Jangan mengeksploitasi bot.😖
+Sanksi: *PERMANENT BLOCK*
 
-4. Jangan Meminta Save Kepada Bot/Owner ❎
-Sanksi: *Block Permanent*
+🗯️ Bot tidak atau lambat merespon ?
+➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan. Tetap patuhi rules‼️
 
-*Q : Kenapa Bot Lambat Meresponnya?*
-*A : Mungkin Karena Jaringan, Atau Ter Banned Oleh Whatsapp, Tetap Patuhi Rules ‼️*
+🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
+➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
 
-*Q : Dimana Saya Bisa Mendapatkan Script Bot Ini?*
-*A : Untuk Sementara Script Ini Masih Private*
+🗯️ Boleh saya menambah ke grup?
+➡️ Untuk sementara bot dalam status free to add.
 
-*Q : Bagaimana Caranya Bot Masuk Ke Group Saya?*
-*A : Bot Bisa Masuk Ke Group Anda Dengan Cara Menyewa Botnya*
+🗯️ Prefixnya apa ya?
+➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
 
-*Q : Prefix Botnya Apa?*
-*A : Bot Ini Menggunakan Multi Prefix, Seperti /,#,. Dan Prefix Wajar Lainnya*
-
-*Q : Kak, Kok Owner Lambat Merespon?*
-*A : Owner Akan Merespon Tentang Seputar Bot, Seperti Bot Error Atau Sewa Bot DLL, Owner Tidak Akan Membalas Chat Dari Orang Yang Meminta Save!*
+🗯️ Kak, kok syaa chat owner tidak direspon?
+➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
 
 
-*Jika Sudah Dipahami Rulesnya, Silakan Ketik *${prefix}allmenu* Untuk Melihat Menu Bot*
+Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
 
-*⚠️ Segala kebijakan Dan Ketemtuan Sabo - MD Di Pegang Oleh Owner Dan Segala Perubahan Kebijakan, Sewaktu Waktu Owner Berhak Mencabut, Memblokir User*
+⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
 
-Arigatou Gozaimasu! Untuk Kalian User Ramah Dan Beberapa Orang Yg Ikut Membantu Juga Dalam Project Pembuatan Sabo - MD
+Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan Alphabot
 😖🙏
 `
 }
 exports.welcome = () =>{
-	return`Intro Tod Ga Intro Di Kick Ma Admin
+	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
 	
 ╭ 𝖭𝖺𝗆𝖺 :
 ├ 𝖴𝗆𝗎𝗋 :
 ├ 𝖦𝖾𝗇𝖽𝖾𝗋 :
 ├ 𝖠𝗌𝗄𝗈𝗍 :
-╰❒ Patuhi Rules Gc Ya Kont Kalo Gamau Di Kick`
+╰❒ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
 }
 exports.leave = () =>{
-	return`Kasian Kena Mental, Makanya Out`
+	return`Yah kok out 😣 Mental aman kan kak >.<
+Goodbye`
 }
 exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
-Mau SC Tod? Awoakwoak
+
+Base : https://github.com/DikaArdnt/Hisoka-Morou
+Recode : y
 `
 }
 exports.tos = (ownernomer) => {
     return `
 *-------「 DONATE 」 -------*
 
-*Donasi Lah Tod Kalo Mau Bot On 24 Jam*
+Hai kak ☺️ 
+Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
 
-*Dana   : 0821-4520-3493*
-*Gopay : 0821-4520-3493*
-*Pulsa  : 0821-4520-3493*
-*Qris All Pay : Scan Kode Qris Diatas*
+Berapapun donasi kalian akan sangat berarti 👍
 
-*Q : Uang Donasi Mau Dipake Buat Apaan Bang?*
-*A : Di Pake Buat Beli Apikey*
-*Q : Apikey Apaan Bang?*
-*A : Apikey Tuh Suatu Sistem Biar Lu Bisa Gunain Semua Fitur Bot*
+Thanks!
 
-*NOTE : MAU DONASI APA LIAT DOANG KONT*
-
-Contact Person Owner:
+Contact person Owner:
 wa.me/${ownernomer}
 
     `
@@ -1446,6 +1456,15 @@ return`╭─❒ 「 Random Cewe 」
 exports.tqto = () =>{
 	return`╭─❒ 「 TqTo 」 
 ├ My God
+├ My Parents
+├ Fatih A.
+├ Ferdi
+├ DikaArdnt
+├ Mhankbarbar
+├ Nurutomo
+├ Rashid
+├ ZeeoneOfc
+├ Penyedia Module
 ╰❒ And All Support
 `
 }
